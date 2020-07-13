@@ -24,7 +24,7 @@ router.get('/menu',(req, res, next) => {
   });
  });
 
- //UPDATE  ---> falta   <---------------------
+ //UPDATE ----> no da
  router.put("/menu", (req, res) => {
  var params = req.query;
     var bodydata = req.body;
@@ -45,12 +45,11 @@ router.get('/menu',(req, res, next) => {
            res.status(500).json({msn: "Existen problemas en la base de datos"});
             return;
         } 
-        v
     });
 
 });
  
- //DELETE  --->falta    <--------------------- solo es ejmplo
+ //DELETE  
  router.delete("/menu", (req, res) => {
   var params = req.query;
     if (params.id == null) {

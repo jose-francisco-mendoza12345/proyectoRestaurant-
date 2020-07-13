@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var USER  = require("../database/ordenes");
+var USER  = require("../database/orden");
 
 /* GET */
 router.get('/ordenes',(req, res, next) => {
@@ -47,17 +47,6 @@ router.get('/ordenes',(req, res, next) => {
     res.status(200).json(docs);
    });  
 
- });
-
- //DELETE  --->falta     <-------solo es un ejemplo
- router.delete("/restaurant", (req, res) => {
-  var datos=req.body;
-  var name = datos.id;
-  console.log(datos);
-  console.log(name);
-  res.status(200).json({
-    mns:"DELETE"
-  })
  });
 
 

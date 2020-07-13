@@ -6,7 +6,7 @@ var logger = require('morgan');
 
 var restaurantRouter = require('./routes/restaurant');   //---->link para restaurant
 var menuRouter = require('./routes/menu');   //---->link para menu
-var ordenesRouter = require('./routes/ordenes');   //---->link para ordenes
+var ordenesRouter = require('./routes/orden');   //---->link para ordenes
 //var userRouter = require('./routes/user');
 
 var app = express();
