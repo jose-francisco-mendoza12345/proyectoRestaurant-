@@ -10,7 +10,7 @@ var USERSCHEMA = new mongoose.Schema({
     },
     propietario:{
         type: String,
-        required: [true, "el nombre del propietario es necesario"]
+        required:[true, "el nombre del propietario es necesario"]
     },
     calle: {
         type: String,

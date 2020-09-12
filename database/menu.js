@@ -10,16 +10,18 @@ var USERSCHEMA = new mongoose.Schema({
     },
     descripcion:{
         type: String,
+        required: [true, "la descripcion es necesaria"]
     },
-    
+  
+    Fotolugar: {
+        pathfile: String,
+        relativefile: String,
+    },
     fechaderegistro: {
         type: Date,
         default: new Date()
     }
 
-    ////Varible FotoLugar ---->tipo de archivo imagen<---------
-
 });
-
 var USER = mongoose.model("menu", USERSCHEMA);
 module.exports = USER;
